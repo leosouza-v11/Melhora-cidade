@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Melhora Cidade</title>
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            padding-top: 56px;
+        }
+
+        .offcanvas-collapse {
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            right: 100%;
+            left: -300px;
+            width: 300px;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color:
+                /*#343a40*/
+                /*#f8f9fa*/
+                #155592;
+            transition-timing-function: ease-in-out;
+            transition-duration: .3s;
+            transition-property: left, visibility;
+        }
+
+        .offcanvas-collapse {
+            align-items: start;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding;
+            background-clip: padding-box;
+            border-right: 5px solid rgba(0, 0, 0, 0.2);
+
+        }
+
+        .offcanvas-collapse.open {
+            left: 0;
+            visibility: visible;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            color: rgba(255, 255, 255, .75);
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-underline .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+            color: #6c757d;
+        }
+
+        .nav-underline .nav-link:hover {
+            color: #007bff;
+        }
+
+        .nav-underline .active {
+            font-weight: 500;
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body class="bg-warning">
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow navbar-dark navbar-offcanvas"
+        style="background-color: #155592;">
+        <a class="navbar-brand mr-auto" href="#">Melhora Cidade</a>
+
+        <button class="navbar-toggler d-block" type="button" id="navToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home</a><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Reclamação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" target="_blank">Developer</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">configuração</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="">Layout</a>
+                        <a class="dropdown-item" href="">Sobre</a>
+                        <a class="dropdown-item" href="Index.html">Sair</a>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container">
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="">noticia1</a></li>
+            <li class="list-group-item"><a href="">noticia2</a></li>
+            <li class="list-group-item"><a href="">noticia3</a></li>
+            <li class="list-group-item"><a href="">noticia4</a></li>
+            <li class="list-group-item"><a href="">noticia5</a></li>
+        </ul>
+
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("document is ready");
+            $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
+                $('.offcanvas-collapse').toggleClass('open')
+            })
+        });
+        window.onload = function () {
+            console.log("window is loaded");
+        };
+    </script>
+</body>
+
+</html>
